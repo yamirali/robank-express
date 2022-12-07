@@ -1,0 +1,12 @@
+{
+    "background_color": "purple",
+    "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+    "display": "fullscreen",
+    "icons": [
+        { "src": "/public/img/favicon/Rolab Academy LOGO 192.png", "type": "image/png", "sizes": "192x192" },
+        { "src": "/public/img/favicon/Rolab Academy LOGO 512.png", "type": "image/png", "sizes": "512x512" }
+    ],
+    "name": "Robank",
+    "short_name": "Robank",
+    "start_url": "/"
+  }

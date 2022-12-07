@@ -1,0 +1,21 @@
+<div class="page">
+    <div class="login_title">Login page</div>
+    <form action="/login" method="POST">
+        {{#if info}}
+        <span>{{info}}</span>
+        {{/if}}
+
+        <div class="input-field">
+            
+            <input type="text" placeholder="login" name="login">
+        </div>
+        <div class="input-field">
+            <input type="password" placeholder="password" name="pass">
+        </div>
+        <div class="input-field">
+            <button type="submit" class="btn">Login</button>
+        </div>
+        
+    </form>
+</div>
+

@@ -1,0 +1,29 @@
+<div class="page">
+    <div class="page_title">Твоя корзина</div>
+        {{#each mainUser}}
+            <div class="market">
+                {{#each order}}
+                    <div class="good">
+                        <form action="/remove" method="POST"> 
+                            <img src="{{url}}">
+                            <div class="good_title">{{title}}</div>
+                            <div class="good_main">
+                                <div class="good_price">{{price}} R</div>
+                                <input type="number" name="quantity" value="{{quantity}}"> 
+                            </div>
+                            <input type="hidden" name="id" value="{{_id}}">
+                            <div class="good_btn_body">
+                                <button class="remove_btn" type="submit">Удалить</button>
+                            </div>
+                        </form>
+                    </div>
+                {{/each}}
+            </div>
+        {{/each}}
+
+        {{!-- <div class="cost">
+            <div class="cost-title">Общая сумма:</div>
+            <div class="cost-sum">{{quantity}}</div>
+        </div> --}}
+            
+</div>

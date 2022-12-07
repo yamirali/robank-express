@@ -1,0 +1,28 @@
+<div class="page">
+    <div class="page_title">Магазин</div>
+    {{#if goods.length}}
+        <div class="market">
+            {{#each goods}}
+                <div class="good">
+                    <form action="/buy" method="POST"> 
+                        <div class="good-boy">
+                            <img src="{{url}}">
+                            <div class="good_title">{{title}}</div>
+                            
+                            <input type="hidden" name="id" value="{{_id}}">
+                        </div>
+
+                        <div class="good-girl">
+                            <div class="good_main">
+                                <div class="good_price">{{price}} R</div>
+                                <input type="number" name="quantity" value="1"> 
+                            </div>
+                            <button class="good_btn" type="submit">Купить</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</div>

@@ -1,0 +1,38 @@
+<div class="page">
+    {{#each users}}
+    <div class="page_title">Привет, {{name}}</div>
+    
+
+    <div class="card">
+        <div class="card-logo"></div>
+        <div class="card-money">
+            <div class="card-money-cur"></div>
+            <div class="card-money-title">{{robucks}}</div>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="profile-title">О тебе</div>
+        <div class="profile-logo"></div>
+        <div class="profile-text">Зовут тебя <span>{{name}}</span></div>
+        <div class="profile-text">Твой логин <span>{{login}}</span></div>
+    </div>
+    {{/each}}
+</div>
+
+{{!-- {{#if users.length}}
+        {{#each users}}
+            <h4>{{name}}</h4>
+            <h4>{{robucks}}</h4>
+            <h4>{{login}}</h4>
+            <h4>{{password}}</h4> 
+
+            {{#each order}} 
+                <h5>{{title}}</h5>  
+                <h5>{{price}}</h5>
+                <img src="{{url}}" width="300px">  
+            {{/each}}
+        {{/each}}
+{{else}}
+<p>No todos!</p>
+{{/if}} --}}

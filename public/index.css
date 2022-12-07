@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'ProductSans-Regular';
+    src:    url('./fonts/ProductSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/ProductSans-Regular.woff') format('woff')
+}
+@font-face {
+    font-family: 'ProductSans-Bold';
+    src:    url('./fonts/ProductSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/ProductSans-Bold.woff') format('woff')
+}
+@font-face {
+    font-family: 'ProductSans-Black';
+    src:    url('./fonts/ProductSans-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/ProductSans-Black.woff') format('woff')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ProductSans-Regular";
+}
+body {
+    min-height: 120vh;
+    background-color: #fbfbfb;
+}
+.navbar {
+    background-color: #F3EDF7;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_item {
+    padding: 4% 6%;
+}
+.active {
+    background-color: #E8DEF8;
+    border-radius: 24px;
+
+}
+.navbar_item a {
+    text-decoration: none;
+    color: #551A8B;
+}
+
+.page{
+    padding: 24px;
+    padding-bottom: 150px;
+}
+.page_title {
+    font-size: 24px;
+    font-family: "ProductSans-Bold";
+    margin-bottom: 12px;
+}
+
+.good_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.good_main input {
+    width: 45px;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 6px;
+
+}
+.good {
+    background-color: #F3EDF7;
+    padding: 12px;
+    border-radius: 16px;
+    margin: 6px;
+}
+.good form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.good_title {
+    font-family: "ProductSans-Bold";
+    margin-bottom: 12px;
+}
+
+.good img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.good_btn {
+    background-color: #d5c4f0;
+    font-size: 16px;
+    color: #551A8B;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    align-self: flex-end;
+    cursor: pointer;
+} 
+.good_price {
+    background-color: #E8DEF8;
+    border-radius: 12px;
+    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.market {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* LOGIN PAGE */
+.login_title {
+    font-size: 24px;
+    font-family: "ProductSans-Bold";
+    margin-bottom: 12px;
+    text-align: center;
+    margin-top: 64px;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+.input-field input {
+    padding: 18px;
+    margin: 6px 0;
+    border-radius: 24px;
+    border: none;
+    background-color: #F3EDF7;
+}
+.input-field button {
+    padding: 18px;
+    margin: 6px 0;
+    border-radius: 24px;
+    border: none;
+    background-color: #ca9aea;
+    cursor: pointer;
+}
+
+/* PROFILE PAGE */
+.card {
+    background: radial-gradient(47.61% 124.09% at 98.96% 2.54%, rgba(213, 171, 178, 0.5) 0%, rgba(255, 94, 210, 0.36) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(51.04% 134.37% at 0.78% 93.94%, #FFFFFF 0%, #E2786A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #D9D9D9;
+    border-radius: 18px;
+    padding: 55px;
+    color: white;
+    position: relative;
+}
+.card-logo {
+    background-image: url(./img/Rolab\ Academy\ LOGO.png);
+    background-position: center;
+    background-size: cover;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.card-money {
+    display: flex;
+    align-items: center;
+}
+.card-money-cur {
+    background-image: url(./img/Group\ 27075.png);
+    background-position: center;
+    background-size: cover;
+    width: 63px;
+    height: 109px;
+}
+.card-money-title {
+    font-family: 'ProductSans-Bold';
+    font-size: 76.4286px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.profile {
+    margin-top: 48px;
+}
+.profile-title {
+    font-size: 20px;
+    font-family: "ProductSans-Bold";
+    margin-bottom: 12px;
+    text-align: center;
+}
+.profile-text {
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 24px;
+    border: none;
+    background-color: #F3EDF7;
+}
+.profile-text span {
+    background-color: #E8DEF8;
+    color: #551A8B;
+    border-radius: 24px;
+    padding: 3% 4%;
+    margin-left: 8px;   
+}
+
+/* CART PAGE */
+.remove_btn {
+    background-color: #f0c4cb;
+    color: #672c36;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    align-self: flex-end;
+    cursor: pointer;
+}

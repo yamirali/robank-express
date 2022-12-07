@@ -1,0 +1,19 @@
+<div class="navbar">
+    {{#if isProfile}}
+    <div class="navbar_item active"><a href="/allLogin">Profile</a></div>
+    {{else}}
+    <div class="navbar_item "><a href="/allLogin">Profile</a></div>
+    {{/if}}
+
+    {{#if isMarket}}
+    <div class="navbar_item active"><a href="/market">Market</a></div>
+    {{else}}
+    <div class="navbar_item "><a href="/market">Market</a></div>
+    {{/if}}
+
+    {{#if isCart}}
+    <div class="navbar_item active"><a href="/cart">Cart</a></div>
+    {{else}}
+    <div class="navbar_item "><a href="/cart">Cart</a></div>
+    {{/if}}
+</div>
