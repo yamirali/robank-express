@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index"
+    "startOld": "node index.js",
+    "devOld": "nodemon index"
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +15,9 @@
     "express-handlebars": "^6.0.6",
     "mongoos": "^0.0.1-security",
     "mongoose": "^6.7.5",
-    "serve-favicon": "^2.5.0"
+    "netlify-lambda": "^2.0.15",
+    "serve-favicon": "^2.5.0",
+    "serverless-http": "^3.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

@@ -1,4 +1,5 @@
 const express = require('express')
+const serverless = require('serverless-http')
 const mongoose = require('mongoose')
 const path = require('path')
 const Handlebars = require('handlebars')
@@ -41,3 +42,5 @@ app.locals.isLogedin = false
 app.locals.mainUser = {}
  
 start()
+
+module.exports.handler = serverless(app)
